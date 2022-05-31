@@ -148,5 +148,6 @@ def main():
         if args.rss_template:
             b.load_rss_template(args.rss_template)
         b.build()
+        output_path = b.build()
 
-        logging.info("published to directory '{}'".format(args.output))
+        logging.info("published to directory '{}'".format(output_path))
